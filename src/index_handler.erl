@@ -26,7 +26,6 @@ content_types_provided(Req, State) ->
     ], Req, State}.
 
 index_from_json(Req, State) ->
-    io:format ("index_from_json: Req: ~p~n", [Req]),
     case utils:auth(Req) of
         {true, User, Req1} ->
             Fname = maps:get(fname, User),

@@ -19,7 +19,8 @@ start(_StartType, _StartArgs) ->
                 {"/", index_handler, []},
                 {"/register", register_handler, []},
                 {"/login", login_handler, []},
-                {"/logout", logout_handler, []}
+                {"/logout", logout_handler, []},
+                {'_', notfound_handler, []}
             ]}     
     ]),     
     {ok, _} = cowboy:start_clear(listener,
