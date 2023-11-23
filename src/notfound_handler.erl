@@ -26,7 +26,5 @@ content_types_provided(Req, State) ->
     ], Req, State}.
 
 notfound_from_json(Req, State) ->
-    Message = [page,  <<"Not Found">>],
-    {jiffy:encode(Message), Req, State}.
-
+    {[], utils:reply(404, <<"Page not found">>, Req), State}.
 
