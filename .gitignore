@@ -1,0 +1,9 @@
+.project
+.settings/
+_build/
+ebin/
+erl_crash.dump
+rebar.lock
+recompile.log
+test/cookiejar
+
