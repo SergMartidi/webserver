@@ -7,4 +7,14 @@ rebar.lock
 recompile.log
 test/cookiejar
 ct/*.beam
+all_runs.html
+ct_default.css
+cookiejar
+ct_log_cache
+ct_run.ct*/
+index.html
+jquery-latest.js
+jquery.tablesorter.min.js
+suite.log.latest.html
+variables-ct@debian
 
