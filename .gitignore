@@ -6,4 +6,5 @@ erl_crash.dump
 rebar.lock
 recompile.log
 test/cookiejar
+ct/*.beam
 
