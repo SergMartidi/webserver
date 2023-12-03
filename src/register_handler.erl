@@ -97,7 +97,6 @@ register_from_text(Req, State) ->
 
 
 registration(Data, Req) ->
-    io:format ("registration: Data: ~p~n", [Data]),
     case utils:auth(Req) of
         {false, Req1} ->
             case database:check_user(pgdb, maps:get(email, Data)) of
