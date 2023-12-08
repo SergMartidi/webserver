@@ -20,7 +20,6 @@ COPY sftp-config.json /webserver
 
 COPY docker-entry.sh /webserver
 
-COPY temp.sh /
 
 RUN cd /webserver && make && cd /
 
