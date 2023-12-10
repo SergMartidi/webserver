@@ -28,6 +28,6 @@ docker:
 	docker build -t $(DOCKERNAME) .
 
 docker_run:
-	docker run $(DOCKERNAME)
+	docker run --network "host" $(DOCKERNAME)
 
 .PHONY: all, deps, compile, ct, docker, docker_run
